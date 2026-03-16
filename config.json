@@ -1,0 +1,41 @@
+{
+  "_comment": "Cursor-Proxy X64 配置文件，基于 antigravity-proxy",
+  "_version": "1.8",
+  "proxy": {
+    "host": "127.0.0.1",
+    "port": 7890,
+    "type": "socks5"
+  },
+  "fake_ip": {
+    "enabled": true,
+    "cidr": "198.18.0.0/15"
+  },
+  "timeout": {
+    "connect": 5000,
+    "send": 5000,
+    "recv": 5000
+  },
+  "traffic_logging": false,
+  "child_injection": true,
+  "child_injection_mode": "filtered",
+  "child_injection_exclude": [],
+  "target_processes": [
+    "language_server_windows",
+    "Cursor.exe"
+  ],
+  "log_level": "info",
+  "proxy_rules": {
+    "allowed_ports": [80, 443],
+    "dns_mode": "direct",
+    "ipv6_mode": "proxy",
+    "udp_mode": "block",
+    "udp_fallback": "block",
+    "routing": {
+      "enabled": true,
+      "priority_mode": "order",
+      "default_action": "proxy",
+      "use_default_private": true,
+      "rules": []
+    }
+  }
+}

@@ -1,6 +1,8 @@
-# Cursor Proxy
+# 写在最前
 
-**仓库地址**：[https://github.com/kiuyaku/cursor-proxy](https://github.com/kiuyaku/cursor-proxy)
+本仓库是原始项目[antigravity-proxy](https://github.com/yuaotian/antigravity-proxy)的cursor实现的使用提醒。没有对原始功能做任何改动，只修改了配置提示cursor可运行。
+
+# Cursor Proxy
 
 让 Cursor 在不开启 TUN 模式的情况下走 SOCKS5/HTTP 代理。基于 [antigravity-proxy](https://github.com/yuaotian/antigravity-proxy) 的 DLL 流量劫持方案，将 Cursor 相关进程的网络请求透明重定向到本地代理。
 
